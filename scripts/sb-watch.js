@@ -18,12 +18,12 @@ process.title = 'pug-watch';
 process.stdout.write('Loading');
 let allPugFiles = {};
 
-watcher.on('add', filePath => _processFile(upath.normalize(filePath), 'add'));
-watcher.on('change', filePath => _processFile(upath.normalize(filePath), 'change'));
-watcher.on('ready', () => {
-    READY = true;
-    console.log(' READY TO ROLL!');
-});
+// watcher.on('add', filePath => _processFile(upath.normalize(filePath), 'add'));
+// watcher.on('change', filePath => _processFile(upath.normalize(filePath), 'change'));
+// watcher.on('ready', () => {
+//     READY = false;
+//     console.log(' READY TO ROLL!');
+// });
 
 _handleSCSS();
 
